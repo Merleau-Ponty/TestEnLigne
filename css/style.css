@@ -1,0 +1,337 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 24 sept. 2015, 17:47:26
+    Author     : maxime
+*/
+
+/*GABARIT.PHP*/
+
+body {
+    background-color: #286bcc;
+}
+
+header div {
+    display: inline-block;
+    vertical-align: top;
+    width: 33%;
+}
+
+.logo {
+    background: url(../img/logo-merleau.png) top left 35px no-repeat;
+    height: 140px;
+}
+
+.title {
+    text-align: center;
+    color: white;
+    font-family: 'calibri';
+    font-size: 24px;
+    padding-top: 1%;
+}
+
+.log-deco {
+    left: 0;
+    text-align: right;
+    padding-top: 1%;
+}
+
+.log-deco div{
+    display: inline-block;
+    vertical-align: top;
+}
+
+.name_dec{
+    text-align: left;
+    font-family: 'calibri';
+    font-weight: bold;
+    padding-top: 0.5%;
+        
+}
+
+.logo_user {
+    background-image: url(../img/bonhomme-log.png);
+    background-repeat: no-repeat;
+    height: 20px;
+    width: 20px;
+}
+
+.logo_deco {
+    background-image: url(../img/deco_button.png);
+    background-repeat: no-repeat;
+    height: 20px;
+    width: 20px;
+}
+
+header div a div {
+    color: black;
+    text-decoration: none;
+}
+
+section {
+    background-color: #7ea6e0;
+    width: 65%;
+    padding-bottom: 3%;
+}
+
+nav{
+    width: 22%;
+    background-color: #d4e1f5;
+    position: fixed;
+}
+
+nav, section {
+    display: inline-block;
+    vertical-align: top;
+    border-radius: 12px;
+    border: solid 3px #5A9FFA;
+    margin: 5% 2% 1% 2%;
+}
+
+footer {
+    text-align: center;
+    width: 100%;
+}
+
+footer hr {
+    display:block;
+    width: 100%;
+    border:none;
+    color:black;
+    height:1px;
+    background:black;
+    background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 350, from(#000), to(#286bcc));
+}
+
+#navfixe{
+    margin-left: 30%;
+}
+
+/*AJOUTCAT.PHP*/
+
+.form, .formTest, .menu{
+    background-color: #d4e1f5;
+    border-radius: 12px;
+    border: solid 3px #5A9FFA;
+    margin: 4% 7% 0 7%;
+    padding: 1% 3%;
+    font-family: 'calibri';
+}
+
+form div h2{
+    font-family: 'calibri';
+    font-size: 30px;
+    text-align: center;
+}
+
+.boutons{
+    text-align: right;
+    margin: 3% 10%;
+}
+
+form div table tr th {
+    width: 40%;
+    text-align: left;
+}
+
+form div table tr th{
+    width: 40%;
+    text-align: left;
+}
+
+/*form div label {
+    width: 900px;
+}
+
+form div .verification {
+    margin-left: 5%;
+}*/
+
+.verification {
+  padding: 2px;
+  border: 1px solid #CCC;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  outline: none; /* Retire la bordure orange appliquée par certains navigateurs (Chrome notamment) lors du focus des éléments <input> */
+}
+
+.verification:focus {
+  border-color: rgba(82, 168, 236, 0.75);
+  -webkit-box-shadow: 0 0 8px rgba(82, 168, 236, 0.5);
+  box-shadow: 0 0 8px rgba(82, 168, 236, 0.5);
+}
+
+.correct {
+  border-color: rgba(68, 191, 68, 0.75);
+}
+
+.correct:focus {
+  border-color: rgba(68, 191, 68, 0.75);
+  -webkit-box-shadow: 0 0 8px rgba(68, 191, 68, 0.5);
+  box-shadow: 0 0 8px rgba(68, 191, 68, 0.5);
+}
+
+.incorrect {
+  border-color: red;
+}
+
+.incorrect:focus {
+  border-color: rgba(191, 68, 68, 0.75);
+  -webkit-box-shadow: 0 0 8px rgba(191, 68, 68, 0.5);
+  box-shadow: 0 0 8px rgba(191, 68, 68, 0.5);
+}
+
+.tooltip, .tooltipQuest {
+  display: none;
+  margin-left: 20px;
+  color :red;
+  margin-left: 46%;
+}
+
+.tooltip1 {
+  display: none;
+  color :green;
+  margin-left: 46%;
+}
+
+.text_texteArea {
+    vertical-align: top;
+}
+
+.ajout_qr{
+    margin-left: 46%;
+    margin-bottom: 2%;
+}
+
+.juste, .type_selec {
+    text-align: left;
+    font-weight: normal;
+}
+
+#maTable1, #maTable2, #maTable3, #maTable4 {
+    display: none;
+}
+
+/*VUEINSC.PHP*/
+
+.connexion {
+    margin-left: 30%;
+}
+
+/*VUECONNEXION.PHP*/
+
+.sansNav {
+    margin-left: 17%;
+}
+
+.logo_insc {
+    background-image: url(../img/logo_insc.png);
+    background-repeat: no-repeat;
+    height: 30px;
+    width: 30px;
+}
+
+.logo_co {
+    background-image: url(../img/logo_co.png);
+    background-repeat: no-repeat;
+    height: 30px;
+    width: 30px;
+}
+
+.logo_insc, .logo_co, .insc-co {
+    display: inline-block;
+    vertical-align: top;
+}
+
+/*VUEESPACEUSER.PHP*/
+
+.espaceUser tr th {
+    width: 25%;
+}
+
+/*NAV.PHP*/
+
+nav ul li, table tr th a {
+    font-family: 'calibri';
+    color: black;
+    font-weight: bold;
+    list-style: none;
+}
+
+a:link{ 
+ text-decoration:none; 
+} 
+
+/*VUEDROIT.PHP*/
+
+.setDroit tr td, .setDroit tr th {
+    width: 27%;
+}
+
+/*VUEDOTEST.PHP*/
+
+.formTest table tr th{
+    width: 500px;
+}
+
+.formTest table tr th label{
+    margin-left: 15%;
+}
+
+.formTest table tr .numQuest{
+    width: 200px;
+}
+
+//bouton ajouter
+#num_1quest2, #num_1quest3, #num_1quest4, #num_1quest5, #num_1quest6{
+    display : none;
+}
+
+.num_quest2, .num_quest3, .num_quest4, .num_quest5, .num_quest6 {
+    display : none;
+}
+
+
+
+#mesNotes {
+    font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+    font-size: 12px;
+    margin-left:23%;
+    margin-top:3%;
+    margin-bottom: 3%;
+    width: 50%;
+    text-align: left;
+    border-collapse: collapse;
+}
+#mesNotes th {
+    font-size: 13px;
+    font-weight: normal;
+    padding: 8px;
+    background: #b9c9fe url('../img/gradhead.png') repeat-x;
+    border-top: 2px solid #d3ddff;
+    border-bottom: 1px solid #fff;
+    color: #039;
+}
+#mesNotes td {
+    padding: 8px;
+    border-bottom: 1px solid #fff;
+    color: #669;
+    border-top: 1px solid #fff;
+    background: #e8edff url('../img/gradback.png') repeat-x;
+}
+#mesNotes tfoot tr td {
+    background: #e8edff;
+    font-size: 16px;
+    color: #99c;
+    text-align:center;
+}
+#mesNotes tbody tr:hover td {
+    background: #d0dafd url('../img/gradhover.png') repeat-x;
+    color: #339;
+}
+#mesNotes a:hover {
+    text-decoration:underline;
+}
